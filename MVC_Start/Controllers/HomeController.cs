@@ -23,8 +23,8 @@ namespace MVC_Start.Controllers
     {
       GuestContact contact = new GuestContact();
 
-      contact.Name = "Manish Agrawal";
-      contact.Email = "magrawal@usf.edu";
+      contact.Name = "Erich McCartney";
+      contact.Email = "emccartney@usf.edu";
       contact.Phone = "813-974-6716";
 
       

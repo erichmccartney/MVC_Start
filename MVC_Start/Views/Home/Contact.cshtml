@@ -10,6 +10,7 @@
 <p>Email: @Model.Email</p>
 <p>Phone number: @Model.Phone</p>
 
+
 <form asp-controller="Home" asp-action="Contact" method="post">
   <p>Name: <input asp-for="Name" /></p>
   <p>Email: <input asp-for="Email" /></p>
@@ -17,14 +18,3 @@
 
   <button type="submit">Submit</button>
 </form>
-
-<a href="/home/index">Home page in html</a>
-<p>
-
-</p>
-<a 
-  asp-controller="Home" 
-  asp-action="Index" 
-  asp-route-id="12">
-  Home page
-</a>
