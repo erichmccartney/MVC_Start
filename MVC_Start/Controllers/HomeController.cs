@@ -31,6 +31,43 @@ namespace MVC_Start.Controllers
             return View();
         }
 
+        public IActionResult Contact2()
+        {
+            GuestContact contact = new GuestContact();
+            
+            contact.Name = "Erich McCartney";
+            contact.Email = "emccartney@usf.edu";
+            contact.Phone = "123-456-789";
+
+            return View(contact);
+        }
+
+        [HttpPost]  //decoration method with same name to collect form information
+        public IActionResult Contact2(GuestContact c)  
+        {
+            return View();
+        }
+
+        public IActionResult Contact3()
+        {
+            GuestContact contact = new GuestContact();
+
+            contact.Name = "Erich McCartney";
+            contact.Email = "emccartney@usf.edu";
+            contact.Phone = "123-456-789";
+            contact.Address = "123 N 1st Ave";
+            contact.City = "Tampa";
+            contact.State = "FL";
+
+            return View(contact);
+        }
+
+        [HttpPost]  //decoration method with same name to collect form information
+        public IActionResult Contact3(GuestContact c)
+        {
+            return View();
+        }
+
 
         public IActionResult Contact()
         {
