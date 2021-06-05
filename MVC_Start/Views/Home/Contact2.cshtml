@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+@model GuestContact
+
+<p>Hello guest</p>
+
+<p>Name: @Model.Name</p>
+<p>Email: @Model.Email</p>
+<p>Phone number: @Model.Phone</p>
+
+<form asp-controller="Home" asp-action="Contact2" method="post">
+    
+    <p>Name: <input asp-for="@Model.Name" /></p>
+    <p>Email: <input asp-for="@Model.Email" /></p>
+    <p>Phone number: <input asp-for="@Model.Phone" /></p>
+
+    <button type="submit">Submit</button>
+
+</form>

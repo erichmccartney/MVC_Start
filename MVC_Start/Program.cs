@@ -10,16 +10,16 @@ using Microsoft.Extensions.Logging;
 
 namespace MVC_Start
 {
-  public class Program
-  {
-    public static void Main(string[] args)
+    public class Program
     {
-      BuildWebHost(args).Run();
-    }
+        public static void Main(string[] args)
+        {
+            BuildWebHost(args).Run();
+        }
 
-    public static IWebHost BuildWebHost(string[] args) =>
-        WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>()
-            .Build();
-  } //Looking forward to working together - Juan Botero
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .Build();
+    }
 }
