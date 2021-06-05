@@ -11,7 +11,14 @@ namespace MVC_Start.Controllers
     {
         public IActionResult Index(int id)
         {
-            return View();
+            DemoModel MyModel = new DemoModel
+            {
+                FirstName = "John",
+                LastName = "Doe",
+                Age = id
+            };
+
+            return View(MyModel);
         }
 
         public IActionResult IndexWithLayout()
